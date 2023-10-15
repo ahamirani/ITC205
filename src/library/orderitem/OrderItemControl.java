@@ -134,7 +134,7 @@ public class OrderItemControl {
         long numberOfItems = numberOfItemsOrdered;
 
 //change 1 - changing + to * because as per calculation the number of books needs to be multiplied  with the actual cost of the book.
-        totalPayments = price * numberOfItems;
+        totalPayments = price + numberOfItems;
         
         currentOrder.getPublisher().incurPayment(totalPayments);
 
