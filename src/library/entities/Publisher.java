@@ -112,9 +112,8 @@ public class Publisher implements Serializable {
 			change = amount - paymentsOwing;
 			paymentsOwing = 0;
 		}
-		//change 2 is either + = *
 		else {
-			paymentsOwing += amount;
+			paymentsOwing -= amount;
 		}
 		return change;
 	}
